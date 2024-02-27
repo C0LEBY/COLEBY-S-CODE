@@ -32,10 +32,10 @@ user_choice = input("What do you choose? 0 for rock, 1 for paper or 2 for scisso
 while user_choice not in ['0', '1', '2']:
     print("Invalid input.")
     user_choice = input("What do you choose? 0 for rock, 1 for paper or 2 for scissors.\n")
-else:
-    user_choice = int(user_choice) 
-    print("Your choice:")
-    print(game_images[user_choice])
+
+user_choice = int(user_choice) 
+print("Your choice:")
+print(game_images[user_choice])
 
 computer_choice = random.randint(0, 2)
 print("Computer chose:")
